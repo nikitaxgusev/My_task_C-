@@ -13,5 +13,6 @@ class WordsCounter
 
 public:
 	std::vector<std::pair<int, std::string> > counter_words();
+	void Whole_text_colored();
 };
 

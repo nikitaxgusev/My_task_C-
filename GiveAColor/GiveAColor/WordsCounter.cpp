@@ -42,7 +42,7 @@ std::vector<std::pair<int, std::string> > WordsCounter::counter_words()
 						else // Then we've already seen it before..
 						{
 							wordsCount[result[0]]++; // Just increment it.
-							c.test(result[0],filename);
+							c.several_words(result[0],filename);
 						}
 							
 				}
@@ -74,6 +74,35 @@ std::vector<std::pair<int, std::string> > WordsCounter::counter_words()
 		std::cout << "Size:" << vec.size()<<" Sum of words:" <<sumWord<< std::endl;
 	
 		return std::vector<std::pair<int, std::string> >(vec);
+}
+
+void WordsCounter::Whole_text_colored()
+{
+
+	ChooseAColor c;
+	std::ifstream fifstr;
+	fifstr.open("text.txt");
+
+	std::ofstream fofstream;
+	std::string filename("ops.html");
+
+	if (fifstr.is_open())
+	{
+		while (fifstr.good())
+		{
+			std::string line;
+			std::vector<std::string> vec;
+
+			while (std::getline(fifstr,line))
+			{
+				c.several_words(line,filename);
+			}
+		}
+	}
+	else
+	{
+		std::cerr << "File of reading doesn't exist." << std::endl;
+	}
 }
 
 

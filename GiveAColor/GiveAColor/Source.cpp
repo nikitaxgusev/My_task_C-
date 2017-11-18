@@ -8,7 +8,7 @@ int main()
 	//c.test1();
 	
 	WordsCounter W;
-	W.counter_words();
+	W.Whole_text_colored();
 	system("pause");
 
 	return 0;
