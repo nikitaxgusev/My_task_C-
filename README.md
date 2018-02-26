@@ -36,17 +36,20 @@ Note: I hope, that I am not a lazy ass and I put some checks...
 ValueOfIntegral
 ----------------------------------------------------------------------------------------
 CONTENT:
-    1. VIntegral.h
-        VIntegral.cpp
-        Source.cpp
-    2. UnitTest (Framework MSV)
+
+      1. VIntegral.h
+         VIntegral.cpp
+         Source.cpp
+
+      2. UnitTest (Framework MSV)
+
 BUILDING FEATURES:
 
-Version of compiler: Microsoft Visual Studio 2015 Version 14.0.25431 Update 3
-Build proccess: debug (x86)
-Test: Using framework of MSV 2015			     
-Additional include directories: TBB
-Additional libraries: TBB lib
+      Version of compiler: Microsoft Visual Studio 2015 Version 14.0.25431 Update 3
+      Build proccess: debug (x86)
+      Test: Using framework of MSV 2015
+      Additional include directories: TBB
+      Additional libraries: TBB lib
 
 TASK: 
 Calculate an integral using TBB.
@@ -68,19 +71,20 @@ use math functions like sin(),cos() and so on and use a big big segment for limi
 Finder
 --------------------------------------------------------------------------------------
 CONTENT:
-  1. Finder.h
-     Finder.cpp
-     Source.cpp
-  2. UnitTest (Own test: MyTestFinder.h)
-  3. Additional files:
-      Text.txt 
+
+    1. Finder.h
+       Finder.cpp
+       Source.cpp
+    2. UnitTest (Own test: MyTestFinder.h)
+    3. Additional files:
+       Text.txt 
 
 BUILDING FEATURES:
 
-Version of compiler: Microsoft Visual Studio 2017 Version 15.5.6
-Build proccess: debug (x86)			     
-Additional include directories: TBB, PSTL
-Additional libraries: TBB lib
+    Version of compiler: Microsoft Visual Studio 2017 Version 15.5.6
+    Build proccess: debug (x86)			     
+    Additional include directories: TBB, PSTL
+    Additional libraries: TBB lib
 
 TASK: 
 Find all words in your text and sort words under their quantity.
