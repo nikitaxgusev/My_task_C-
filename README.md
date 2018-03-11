@@ -118,4 +118,7 @@ After working with values into the vector, I'm trying to show , how the 'stl' al
 did their work on an outputting image. You can the result. Also, you can see the time that
 'stl' algorithms need with the 'pstl' policy. 
 Result:
-![alt text](ImageSHow\imageshowRes.png "Result after sorting")
+
+
+
+![Alt text](https://github.com/nikitaxgusev/My_task_Cplusplus/blob/master/ImageShow/imageshowRes.jpg?raw=true "Optional Title")
