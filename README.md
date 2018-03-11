@@ -46,7 +46,7 @@ CONTENT:
 BUILDING FEATURES:
 
       Version of compiler: Microsoft Visual Studio 2015 Version 14.0.25431 Update 3
-      Build proccess: debug (x86)
+      Build process: debug (x86)
       Test: Using framework of MSV 2015
       Additional include directories: TBB
       Additional libraries: TBB lib
@@ -82,7 +82,7 @@ CONTENT:
 BUILDING FEATURES:
 
     Version of compiler: Microsoft Visual Studio 2017 Version 15.5.6
-    Build proccess: debug (x86)			     
+    Build process: debug (x86)			     
     Additional include directories: TBB, PSTL
     Additional libraries: TBB lib
 
@@ -94,3 +94,26 @@ How to sort words? Using std::sort(); with the right policy . The policy
 helps std::sort(); to have some speed for iterations in a container.So,
 To sum it up, if you have a big container for std::sort();, 
 you will see the result of economy the time. 
+
+ImageShow
+--------------------------------------------------------------------------------------
+CONTENT:
+
+    1. Source.cpp
+
+BUILDING FEATURES:
+
+    Version of compiler: Microsoft Visual Studio 2015 Version 14.0.25431 Update 3
+    Build process: Release (x64)			     
+    Additional include directories: TBB, PSTL, OpenCV
+    Additional libraries: TBB lib,OpenCV
+	
+TASK: 
+Have a vector of double values, make some calculation with them, sort a vector
+and show it as an image. 	
+
+EXPLANATION: 
+Using 'pstl' policy in order to work with 'stl' algorithms (std::transform, std::sort).
+After working with values into the vector, I'm trying to show , how the 'stl' algorithms
+did their work on an outputting image. You can the result. Also, you can see the time that
+'stl' algorithms need with the 'pstl' policy. 
